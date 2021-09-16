@@ -15,7 +15,7 @@ setTimeout(() => {
     "#wbot-header .wbot-info .wbot-client"
   )
   // console.log(headerHello)
-  headerHello.innerHTML = "👋 Olá! Eu sou a Flora!"
+  headerHello.innerHTML = "Olá! Eu sou a Flora!"
 }, 1000)
 
 setTimeout(() => {

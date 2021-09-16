@@ -57,7 +57,7 @@
 #wbot-chat-container #wbot-chat #wbot-header {
   height: 75px;
   padding-bottom: 15px;
-  top: -5px;
+  /* top: -5px; */
   box-sizing: content-box;
 }
 #wbot-chat-container #wbot-chat #wbot-header .wbot-avatar {
@@ -65,7 +65,7 @@
   background-size: contain;
   width: 65px;
   height: 65px;
-  margin-bottom: -15px;
+  margin-bottom: -25px;
   z-index: 55;
 }
 #wbot-chat-container #wbot-chat #wbot-header .wbot-info {
@@ -117,7 +117,19 @@
 #wbot-chat-container .wbot-message.wbot-out .wbot-content {
   background: #dcf8c6;
 }
+#wbot-chat-container .wbot-message.wbot-in .wbot-content {
+  background: #fff;
+}
 #wbot-chat-container .wbot-message.wbot-out .wbot-content,
+#wbot-chat-container .wbot-message.wbot-out .wbot-content b,
 #wbot-chat-container .wbot-message.wbot-out .wbot-content p {
   color: #181a1b;
+}
+
+#wbot-chat-container
+  .wbot-message.wbot-in
+  .wbot-content
+  .wbot-menu
+  :is(p, b, span, i, a) {
+  color: #fff;
 }
