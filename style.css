@@ -1,0 +1,123 @@
+/* CHAT CONTAINER */
+/* #wbot-chat-container {
+      } */
+
+/* CHAT BUTTON */
+
+#wbot-chat-container button#wbot-open-chat {
+  width: 60px;
+  height: 60px;
+
+  box-shadow: 0 10px 28px -2px rgba(0, 151, 66, 0.78);
+}
+#wbot-chat-container button#wbot-open-chat:after {
+  content: "";
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAABICAYAAABBeC2mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUySURBVHgB7Zvtcds4EIZXnvt/vArMq+B0FYipwLkK5KtATgVSKnA6oFNB3AGVCuRUQKYCORW8wZrgmFGwxIIERWaiZ2ZHGhJfC2DxsQCJLly48DuxoDMBIDU/iZGlkT/t/4ZnI9+MVEaeFovFM52B0ZQ3yrKSKyOZlSQgOiv/ZOTRyGdTGU80d4zCiZGdkRJxKY3c294zL0yhMiMFzkM+i0rgQhj5hGnIh1ZCb5s3Gd+Zny2F2TLzfCJMatMJTYt5b8aEHZ0D29qFsnWONuzGyMpI4kk7seE2CDOjA8Y2BdS2fVQUprAK9GnJdn5cGbfQVUTJ5aMxMAnfKQpQGFnRCJh0l6jt3McdxQT19OWr9VGUdpTlBv6pdEcxUCjO8++g7t2zXFuM2QNMAm87Emfbf0sTYsvXNQZl1AfUo7qUcImZrLZsOcuOBkoplI4EZ6N4g6cC+LneLCHb+ewUb0B3T70PSUTiLCN6X1CvQyQyTQIHIfKWfgEgr0cOvoi3QsRSkWmznc2tTDIF2rIUgh7rrkilECn1ZJYIcSfpLZDtv5QiSPaSKzLLhbhcgKlafyuUaU0BCqSeTCRTadjQBKDuja7WL1wBXWha/eBRvqCJgNz6WTuQ1HorT+IpdGQ0AZAb9WUsurLhXEpWxkPy2ZP+knRM0vWtC3zvePWyJ2mUzxwBXJFO0Q5mvAGZZOAzfHQ8Y99AcoV6QEsdAR4oLv/QNDwKz2+45VPh5Rfyoz1M0JjQKNiuXzleLVl5V4tUyiOjil49sBL8/g1Ny97xLJVaviIFtoIePcHemHAVTUvlePbS8okysMTHjnePMzln++p6KLW8+pTUKLcneWbIMI/9v0uf9CogcBf/C8+5V3lXiWfAqY+kfNCcbG36nfCaWz+uLz0SrHzleB68IDEV8IHk7s97e+1qcAyc+kRp+Rbc/SWTKSa0/2vHs0pq+ZR6YLv/f8JrrtCDtgfYTckm0qYodTyrpB3dkQYA/7neTpFG3grPlbamnsDt1vrUHAC6GGSj8B8nlRDMAN2u8+BKgNupsfG/HICiApi8XQnodj8HVwLkxl01AQrHyygeGGUFNJXANq45/2/w9k6b5k9oChhlDw59BYTiPUSB26tctANIXSOa69nmUSIuS0+ekgmtTwMWjkDew4rACmCfX444aA5SciFuehpwKwTsPcV0FIqn1xLDWHvykJyruSuw5OcuMZL/bUAleM0RcqsvpQjbvpkNAfX1sxz+kb6EbpCTXPE/zGCLk0jcwmxLpy39bJauf9EZsMqxazm15WguKz5o/ICo7bkg95L2706vEtzXSaMOfGMC+Tqs368Atw3OwSHhBUNulECe729o5qD7ypx/xoKwFMR0py0qPIqr7+MUjsiTnbJqMOX70KH4ISQh11Qzy7s48N/+LqH1HEFeB6864iQ2XvRVYBeonSXHKIrbBO8diRwd4VjZna3140mGGY0IdJ+zlAj1FcJ9w4LnTO5eG/tfe9c+6p1c6L/h4TBhgzP0NyxCKFEvWTMKBK/mxL1R69zQjeotFjazWxr/ZGVPtaeYpTk74/+p/X9t/y/pdWmroTJy2+cI/A/7e45rpRnFhw9K3vf9ArPrWkoXzdE0H0P9S/Fvcfh4oHqT8m7Qp6eQl7Rtmq+kthCmPrx6aUqMw9Hmn1IsIC9pC9QDzgqBIyjq72DyCBVxtOmsMMISe4F6+ZpRPXBwV95T/fFu/+7UArXn5Nrmwf+TE2l/YFhZeeJymDJ8pTExhVtj5huXCxcuXIjBdx78J62Bc4bzAAAAAElFTkSuQmCC");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#wbot-chat-container #wbot-open-chat:before {
+  max-width: 280px;
+  background: #ffffff;
+  color: #4b5563;
+  padding: 15px 25px;
+  font-size: 18px;
+  box-shadow: 0 10px 15px rgba(0, 151, 66, 0.28);
+}
+#wbot-chat-container
+  #wbot-chat:not(.wbot-active)
+  ~ #wbot-open-chat.start-msg:before,
+#wbot-chat-container
+  #wbot-chat:not(.wbot-active)
+  ~ #wbot-open-chat:hover:before {
+  bottom: 12px;
+  right: 72px;
+  transform: scale(1);
+}
+
+/* MAIN CHAT WRAP */
+/* #wbot-chat-container #wbot-chat {
+      } */
+
+/* CHAT HEADER */
+#wbot-chat-container #wbot-chat #wbot-header,
+#wbot-chat-container button#wbot-open-chat {
+  background: rgb(0, 101, 44);
+  background: -moz-linear-gradient(45deg, #00652c 0%, #00ec7e 100%);
+  background: -webkit-linear-gradient(45deg, #00652c 0%, #00ec7e 100%);
+  background: linear-gradient(45deg, #00652c 0%, #00ec7e 100%);
+}
+#wbot-chat-container #wbot-chat #wbot-header {
+  height: 75px;
+  padding-bottom: 15px;
+  top: -5px;
+  box-sizing: content-box;
+}
+#wbot-chat-container #wbot-chat #wbot-header .wbot-avatar {
+  background: url(https://images.unsplash.com/photo-1520810627419-35e362c5dc07?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ);
+  background-size: contain;
+  width: 65px;
+  height: 65px;
+  margin-bottom: -15px;
+  z-index: 55;
+}
+#wbot-chat-container #wbot-chat #wbot-header .wbot-info {
+  display: flex;
+  flex-direction: column;
+}
+#wbot-chat-container #wbot-chat #wbot-header .wbot-info p.wbot-attendant {
+  order: 2;
+  opacity: 0.7;
+}
+
+@media (max-width: 480px) {
+  #wbot-chat-container #wbot-chat #wbot-header {
+    padding-bottom: 0px;
+  }
+  #wbot-chat-container #wbot-chat #wbot-header .wbot-avatar {
+    margin-bottom: -25px;
+  }
+}
+
+/* CHAT FOOTER */
+#wbot-chat-container #wbot-chat #wbot-footer {
+  background: #f0f0f0;
+  height: 65px;
+}
+#wbot-chat-container
+  #wbot-chat
+  #wbot-footer
+  button#wbot-send-message
+  > *:before,
+#wbot-chat-container
+  #wbot-chat
+  #wbot-footer
+  button#wbot-attach-file
+  > *:before {
+  color: #181a1b !important;
+}
+#wbot-chat-container #wbot-message-input {
+  border-radius: 20px;
+  padding: 8px 14px;
+}
+
+/* CHAT BODY MESSAGES */
+#wbot-chat-container #wbot-chat #wbot-chat-main-wrapper {
+  background-image: url(https://a-cloud.b-cdn.net/media/iW=600&iH=600&oX=0&oY=0&cW=600&cH=600/644c700e53a032f6fc04777f3401bd2b.png);
+  background-size: cover;
+  margin-top: 75px;
+}
+#wbot-chat-container .wbot-message.wbot-out .wbot-content {
+  background: #dcf8c6;
+}
+#wbot-chat-container .wbot-message.wbot-out .wbot-content,
+#wbot-chat-container .wbot-message.wbot-out .wbot-content p {
+  color: #181a1b;
+}
